@@ -93,7 +93,7 @@ public class MyDispatchServlet extends HttpServlet {
         }
         return null;
     }
-    // 3 获取url - method
+    // 3 获取url - method, url-controller
     private void initHandlerMapping() throws IllegalAccessException, InstantiationException {
         for (Map.Entry<String, Object> entry : iocMap.entrySet()) {
             Class<?> clazz = entry.getValue().getClass();
